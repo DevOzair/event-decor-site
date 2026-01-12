@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Memorable Moments Events & Decor</title>
+    <meta
+      name="description"
+      content="Meet the team behind Memorable Moments. Our process, values, and approach to event styling."
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/tailwind-config.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <script defer src="assets/js/main.js"></script>
+  </head>
+
+  <body class="font-sans text-brand-dark bg-brand-cream antialiased">
+    <!-- Nav (aria-current on About) -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex-shrink-0 flex items-center">
+            <a
+              href="index.html"
+              class="text-2xl font-serif font-bold text-gray-800 tracking-wider"
+            >
+              MEMORABLE MOMENTS<span class="text-brand-gold">.</span>
+            </a>
+          </div>
+
+          <div class="hidden md:flex space-x-8 items-center">
+            <a
+              href="index.html"
+              class="text-gray-800 hover:text-brand-gold transition font-medium text-sm tracking-wide uppercase"
+              >Home</a
+            >
+            <a
+              href="services.html"
+              class="text-gray-800 hover:text-brand-gold transition font-medium text-sm tracking-wide uppercase"
+              >Services</a
+            >
+            <a
+              href="gallery.html"
+              class="text-gray-800 hover:text-brand-gold transition font-medium text-sm tracking-wide uppercase"
+              >Gallery</a
+            >
+            <a
+              href="packages.html"
+              class="text-gray-800 hover:text-brand-gold transition font-medium text-sm tracking-wide uppercase"
+              >Packages</a
+            >
+            <a
+              href="about.html"
+              aria-current="page"
+              class="text-brand-gold transition font-medium text-sm tracking-wide uppercase"
+              >About</a
+            >
+            <a
+              href="contact.html"
+              class="bg-brand-sage text-white px-6 py-2.5 rounded-sm hover:bg-gray-700 transition duration-300 text-sm tracking-wide uppercase font-semibold shadow-md"
+            >
+              Get a Quote
+            </a>
+          </div>
+
+          <div class="md:hidden flex items-center">
+            <button
+              id="mobile-menu-btn"
+              class="text-gray-800 hover:text-brand-gold focus:outline-none"
+              type="button"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+              aria-label="Open menu"
+            >
+              <i class="fas fa-bars text-2xl" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white absolute w-full shadow-lg border-t"
+      >
+        <div class="px-4 pt-2 pb-6 space-y-2">
+          <a
+            href="index.html"
+            class="block px-3 py-3 text-gray-800 hover:bg-brand-cream hover:text-brand-gold font-medium"
+            >Home</a
+          >
+          <a
+            href="services.html"
+            class="block px-3 py-3 text-gray-800 hover:bg-brand-cream hover:text-brand-gold font-medium"
+            >Services</a
+          >
+          <a
+            href="gallery.html"
+            class="block px-3 py-3 text-gray-800 hover:bg-brand-cream hover:text-brand-gold font-medium"
+            >Gallery</a
+          >
+          <a
+            href="packages.html"
+            class="block px-3 py-3 text-gray-800 hover:bg-brand-cream hover:text-brand-gold font-medium"
+            >Packages</a
+          >
+          <a
+            href="about.html"
+            aria-current="page"
+            class="block px-3 py-3 text-brand-gold font-bold"
+            >About</a
+          >
+          <a
+            href="contact.html"
+            class="block px-3 py-3 text-brand-sage font-bold"
+            >Get a Quote</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <header class="pt-32 pb-14 bg-white border-b border-gray-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <p
+          class="text-brand-sage uppercase tracking-widest text-sm font-bold mb-3"
+        >
+          About
+        </p>
+        <h1
+          class="text-3xl md:text-5xl font-serif font-bold text-gray-900 mb-4"
+        >
+          Designing Dreams Into Reality
+        </h1>
+        <p class="text-gray-600 max-w-2xl">
+          We blend creativity, precision, and premium materials to create
+          memorable atmospheres for every occasion.
+        </p>
+        <div class="w-24 h-1 bg-brand-gold mt-6"></div>
+      </div>
+    </header>
+
+    <main class="py-20 bg-brand-cream">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col lg:flex-row items-center gap-12">
+          <div class="lg:w-1/2 relative">
+            <div
+              class="absolute -top-4 -left-4 w-full h-full border-2 border-brand-gold z-0 hidden md:block"
+            ></div>
+            <img
+              src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1000&q=80"
+              alt="Styled event setup"
+              class="relative z-10 w-full shadow-lg rounded-sm"
+            />
+          </div>
+
+          <div class="lg:w-1/2">
+            <h2
+              class="text-brand-sage uppercase tracking-widest text-sm font-bold mb-3"
+            >
+              Our Story
+            </h2>
+            <h3
+              class="text-3xl md:text-4xl font-serif font-bold text-gray-900 mb-6"
+            >
+              A Boutique Styling Studio
+            </h3>
+
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              Replace this with your real story: where you started, what you
+              love about event styling, and what makes your installs special.
+            </p>
+            <p class="text-gray-600 mb-8 leading-relaxed">
+              Add your process and service area here. Mention reliability,
+              on-time installation, and how you customise each setup.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+              <div
+                class="bg-white p-6 rounded-sm border border-gray-100 shadow-sm text-center"
+              >
+                <span
+                  class="block text-3xl font-serif font-bold text-brand-gold"
+                  >—</span
+                >
+                <span class="text-sm text-gray-500 uppercase tracking-wide"
+                  >Events</span
+                >
+              </div>
+              <div
+                class="bg-white p-6 rounded-sm border border-gray-100 shadow-sm text-center"
+              >
+                <span
+                  class="block text-3xl font-serif font-bold text-brand-gold"
+                  >—</span
+                >
+                <span class="text-sm text-gray-500 uppercase tracking-wide"
+                  >Years</span
+                >
+              </div>
+              <div
+                class="bg-white p-6 rounded-sm border border-gray-100 shadow-sm text-center"
+              >
+                <span
+                  class="block text-3xl font-serif font-bold text-brand-gold"
+                  >—%</span
+                >
+                <span class="text-sm text-gray-500 uppercase tracking-wide"
+                  >Happy Clients</span
+                >
+              </div>
+            </div>
+
+            <div class="mt-10">
+              <a
+                href="contact.html"
+                class="inline-block bg-brand-gold text-white px-8 py-4 rounded-sm hover:bg-white hover:text-brand-gold transition duration-300 uppercase tracking-widest text-sm font-bold shadow-lg"
+              >
+                Get a Quote
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <section
+          class="mt-16 bg-white p-8 md:p-10 shadow-lg rounded-sm border-t-4 border-brand-sage"
+        >
+          <h3 class="text-2xl font-serif font-bold text-gray-900 mb-4">
+            Our Process
+          </h3>
+          <div
+            class="grid grid-cols-1 md:grid-cols-3 gap-8 text-gray-600 text-sm"
+          >
+            <div>
+              <p class="font-bold uppercase tracking-wider text-gray-900 mb-2">
+                1) Consult
+              </p>
+              <p>Share your date, venue, theme, and inspiration.</p>
+            </div>
+            <div>
+              <p class="font-bold uppercase tracking-wider text-gray-900 mb-2">
+                2) Design
+              </p>
+              <p>We confirm colours, sizing, and logistics, then quote.</p>
+            </div>
+            <div>
+              <p class="font-bold uppercase tracking-wider text-gray-900 mb-2">
+                3) Install
+              </p>
+              <p>We deliver and style the space so it’s photo-ready.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12 border-t border-gray-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+          <div class="col-span-1 md:col-span-2">
+            <a
+              href="index.html"
+              class="text-2xl font-serif font-bold text-white tracking-wider mb-4 block"
+            >
+              MEMORABLE MOMENTS<span class="text-brand-gold">.</span>
+            </a>
+            <p class="text-gray-400 text-sm leading-relaxed max-w-sm">
+              Creating exceptional atmospheres for life's most important
+              moments. We bring creativity, precision, and passion to every
+              event we touch.
+            </p>
+          </div>
+
+          <div>
+            <h4
+              class="text-white font-bold uppercase tracking-wider text-sm mb-4"
+            >
+              Quick Links
+            </h4>
+            <ul class="space-y-2 text-sm text-gray-400">
+              <li>
+                <a href="index.html" class="hover:text-brand-gold transition"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="services.html" class="hover:text-brand-gold transition"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a href="gallery.html" class="hover:text-brand-gold transition"
+                  >Gallery</a
+                >
+              </li>
+              <li>
+                <a href="packages.html" class="hover:text-brand-gold transition"
+                  >Packages</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  aria-current="page"
+                  class="text-brand-gold transition"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="hover:text-brand-gold transition"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4
+              class="text-white font-bold uppercase tracking-wider text-sm mb-4"
+            >
+              Services
+            </h4>
+            <ul class="space-y-2 text-sm text-gray-400">
+              <li>
+                <a href="#" class="hover:text-brand-gold transition"
+                  >Wedding Design</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-brand-gold transition"
+                  >Corporate Styling</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-brand-gold transition"
+                  >Floral Arrangements</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-brand-gold transition"
+                  >Equipment Rental</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center"
+        >
+          <p class="text-gray-500 text-sm">
+            © 2026 Memorable Moments Events &amp; Decor. All rights reserved.
+          </p>
+          <div class="flex flex-wrap gap-6 mt-4 md:mt-0 text-sm text-gray-500">
+            <a href="index.html" class="hover:text-white">Home</a>
+            <a href="services.html" class="hover:text-white">Services</a>
+            <a href="gallery.html" class="hover:text-white">Gallery</a>
+            <a href="packages.html" class="hover:text-white">Packages</a>
+            <a href="about.html" aria-current="page" class="text-white"
+              >About</a
+            >
+            <a href="contact.html" class="hover:text-white">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery | Memorable Moments Events & Decor</title>
+    <meta
+      name="description"
+      content="A curated portfolio of balloon installs, backdrops, and styled events."
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/js/tailwind-config.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <script defer src="assets/js/main.js"></script>
+  </head>
+
+  <body class="font-sans text-brand-dark bg-brand-cream antialiased">
+    <!-- Nav (same as services, with aria-current on Gallery) -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex-shrink-0 flex items-center">
+            <a
+              href="index.html"
+              class="text-2xl font-serif font-bold text-gray-800 tracking-wider"
+            >
+              MEMORABLE MOMENTS<span class="text-brand-gold">.</span>
+            </a>
+          </div>
+
+          <div class="hidden md:flex space-x-8 items-center">
+            <a
+              href="index.html"
+              class="text-gray-800 hover:text-brand-gold transition font-medium text-sm tracking-wide uppercase"
+              >Home</a
+            >
+            <a
+              href="services.html"
+              class="text-gray-800 hover:text-brand-gold transition font-medium text-sm tracking-wide uppercase"
+              >Services</a
+            >
+            <a
+              href="gallery.html"
+              aria-current="page"
+              class="text-brand-gold transition font-medium text-sm tracking-wide uppercase"
+              >Gallery</a
+            >
+            <a
+              href="packages.html"
+              class="text-gray-800 hover:text-brand-gold transition font-medium text-sm tracking-wide uppercase"
+              >Packages</a
+            >
+            <a
+              href="about.html"
+              class="text-gray-800 hover:text-brand-gold transition font-medium text-sm tracking-wide uppercase"
+              >About</a
+            >
+            <a
+              href="contact.html"
+              class="bg-brand-sage text-white px-6 py-2.5 rounded-sm hover:bg-gray-700 transition duration-300 text-sm tracking-wide uppercase font-semibold shadow-md"
+            >
+              Get a Quote
+            </a>
+          </div>
+
+          <div class="md:hidden flex items-center">
+            <button
+              id="mobile-menu-btn"
+              class="text-gray-800 hover:text-brand-gold focus:outline-none"
+              type="button"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+              aria-label="Open menu"
+            >
+              <i class="fas fa-bars text-2xl" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white absolute w-full shadow-lg border-t"
+      >
+        <div class="px-4 pt-2 pb-6 space-y-2">
+          <a
+            href="index.html"
+            class="block px-3 py-3 text-gray-800 hover:bg-brand-cream hover:text-brand-gold font-medium"
+            >Home</a
+          >
+          <a
+            href="services.html"
+            class="block px-3 py-3 text-gray-800 hover:bg-brand-cream hover:text-brand-gold font-medium"
+            >Services</a
+          >
+          <a
+            href="gallery.html"
+            aria-current="page"
+            class="block px-3 py-3 text-brand-gold font-bold"
+            >Gallery</a
+          >
+          <a
+            href="packages.html"
+            class="block px-3 py-3 text-gray-800 hover:bg-brand-cream hover:text-brand-gold font-medium"
+            >Packages</a
+          >
+          <a
+            href="about.html"
+            class="block px-3 py-3 text-gray-800 hover:bg-brand-cream hover:text-brand-gold font-medium"
+            >About</a
+          >
+          <a
+            href="contact.html"
+            class="block px-3 py-3 text-brand-sage font-bold"
+            >Get a Quote</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <header class="pt-32 pb-14 bg-white border-b border-gray-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <p
+          class="text-brand-sage uppercase tracking-widest text-sm font-bold mb-3"
+        >
+          Gallery
+        </p>
+        <h1
+          class="text-3xl md:text-5xl font-serif font-bold text-gray-900 mb-4"
+        >
+          Recent Creations
+        </h1>
+        <p class="text-gray-600 max-w-2xl">
+          A snapshot of our balloon installs, backdrops, and styled moments.
+        </p>
+        <div class="w-24 h-1 bg-brand-gold mt-6"></div>
+      </div>
+    </header>
+
+    <main class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Optional filter buttons (static for now) -->
+        <div class="flex flex-wrap gap-3 justify-center mb-10">
+          <button
+            class="px-4 py-2 rounded-sm bg-brand-cream border border-gray-100 text-gray-700 text-sm hover:shadow"
+          >
+            All
+          </button>
+          <button
+            class="px-4 py-2 rounded-sm bg-brand-cream border border-gray-100 text-gray-700 text-sm hover:shadow"
+          >
+            Weddings
+          </button>
+          <button
+            class="px-4 py-2 rounded-sm bg-brand-cream border border-gray-100 text-gray-700 text-sm hover:shadow"
+          >
+            Birthdays
+          </button>
+          <button
+            class="px-4 py-2 rounded-sm bg-brand-cream border border-gray-100 text-gray-700 text-sm hover:shadow"
+          >
+            Corporate
+          </button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="gallery-item aspect-square md:h-80 cursor-pointer">
+            <img
+              src="https://images.unsplash.com/photo-1519225468359-2996bc140aaa?auto=format&fit=crop&w=800&q=80"
+              alt="Wedding table setting"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="gallery-overlay absolute inset-0 flex items-center justify-center"
+            >
+              <div class="text-center">
+                <p class="text-white font-serif text-xl italic">Wedding</p>
+                <p class="text-brand-gold text-sm uppercase tracking-widest">
+                  Soft Neutrals
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item aspect-square md:h-80 cursor-pointer">
+            <img
+              src="https://images.unsplash.com/photo-1478146059778-26028b07395a?auto=format&fit=crop&w=800&q=80"
+              alt="Balloon arch"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="gallery-overlay absolute inset-0 flex items-center justify-center"
+            >
+              <div class="text-center">
+                <p class="text-white font-serif text-xl italic">Birthday</p>
+                <p class="text-brand-gold text-sm uppercase tracking-widest">
+                  Bold Colours
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item aspect-square md:h-80 cursor-pointer">
+            <img
+              src="https://images.unsplash.com/photo-1505236858219-8359eb29e329?auto=format&fit=crop&w=800&q=80"
+              alt="Corporate event"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="gallery-overlay absolute inset-0 flex items-center justify-center"
+            >
+              <div class="text-center">
+                <p class="text-white font-serif text-xl italic">Corporate</p>
+                <p class="text-brand-gold text-sm uppercase tracking-widest">
+                  Brand Moment
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item aspect-square md:aspect-auto md:h-96 md:col-span-2 cursor-pointer"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=1400&q=80"
+              alt="Event crowd celebration"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="gallery-overlay absolute inset-0 flex items-center justify-center"
+            >
+              <div class="text-center">
+                <p class="text-white font-serif text-xl italic">Reception</p>
+                <p class="text-brand-gold text-sm uppercase tracking-widest">
+                  Statement Install
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item aspect-square md:h-96 cursor-pointer">
+            <img
+              src="https://images.unsplash.com/photo-1530103862676-de3c9a59af38?auto=format&fit=crop&w=800&q=80"
+              alt="Floral detail"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="gallery-overlay absolute inset-0 flex items-center justify-center"
+            >
+              <div class="text-center">
+                <p class="text-white font-serif text-xl italic">Detail</p>
+                <p class="text-brand-gold text-sm uppercase tracking-widest">
+                  Finishing Touches
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-12">
+          <a
+            href="contact.html"
+            class="inline-block bg-brand-gold text-white px-8 py-4 rounded-sm hover:bg-white hover:text-brand-gold transition duration-300 uppercase tracking-widest text-sm font-bold shadow-lg"
+          >
+            Request a Quote
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12 border-t border-gray-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+          <div class="col-span-1 md:col-span-2">
+            <a
+              href="index.html"
+              class="text-2xl font-serif font-bold text-white tracking-wider mb-4 block"
+            >
+              MEMORABLE MOMENTS<span class="text-brand-gold">.</span>
+            </a>
+            <p class="text-gray-400 text-sm leading-relaxed max-w-sm">
+              Creating exceptional atmospheres for life's most important
+              moments. We bring creativity, precision, and passion to every
+              event we touch.
+            </p>
+          </div>
+
+          <div>
+            <h4
+              class="text-white font-bold uppercase tracking-wider text-sm mb-4"
+            >
+              Quick Links
+            </h4>
+            <ul class="space-y-2 text-sm text-gray-400">
+              <li>
+                <a href="index.html" class="hover:text-brand-gold transition"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="services.html" class="hover:text-brand-gold transition"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="gallery.html"
+                  aria-current="page"
+                  class="text-brand-gold transition"
+                  >Gallery</a
+                >
+              </li>
+              <li>
+                <a href="packages.html" class="hover:text-brand-gold transition"
+                  >Packages</a
+                >
+              </li>
+              <li>
+                <a href="about.html" class="hover:text-brand-gold transition"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="hover:text-brand-gold transition"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4
+              class="text-white font-bold uppercase tracking-wider text-sm mb-4"
+            >
+              Services
+            </h4>
+            <ul class="space-y-2 text-sm text-gray-400">
+              <li>
+                <a href="#" class="hover:text-brand-gold transition"
+                  >Wedding Design</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-brand-gold transition"
+                  >Corporate Styling</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-brand-gold transition"
+                  >Floral Arrangements</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-brand-gold transition"
+                  >Equipment Rental</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center"
+        >
+          <p class="text-gray-500 text-sm">
+            © 2026 Memorable Moments Events &amp; Decor. All rights reserved.
+          </p>
+          <div class="flex flex-wrap gap-6 mt-4 md:mt-0 text-sm text-gray-500">
+            <a href="index.html" class="hover:text-white">Home</a>
+            <a href="services.html" class="hover:text-white">Services</a>
+            <a href="gallery.html" aria-current="page" class="text-white"
+              >Gallery</a
+            >
+            <a href="packages.html" class="hover:text-white">Packages</a>
+            <a href="about.html" class="hover:text-white">About</a>
+            <a href="contact.html" class="hover:text-white">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
