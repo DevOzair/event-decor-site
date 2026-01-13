@@ -56,3 +56,43 @@
 .animate-fade-in-up {
   animation: fade-in-up 700ms ease-out both;
 }
+
+/* Navbar brand color transitions based on transparency/scroll state */
+#navbar .brand-title {
+  transition: color 300ms ease;
+}
+
+/* Transparent navbar over dark hero: make brand text white */
+#navbar:not(.glass-nav) .brand-title {
+  color: #ffffff;
+}
+
+/* Scrolled/white navbar: revert brand text to dark gray-800 */
+#navbar.glass-nav .brand-title {
+  color: #1f2937; /* Tailwind gray-800 */
+}
+
+/* Desktop nav item color transitions and states */
+#navbar .nav-link {
+  transition: color 300ms ease;
+}
+
+/* Transparent state: make non-active links white for contrast */
+#navbar:not(.glass-nav) .nav-link:not([aria-current="page"]) {
+  color: #ffffff;
+}
+
+/* Scrolled state: revert links to dark (active handled below) */
+#navbar.glass-nav .nav-link {
+  color: #1f2937; /* Tailwind gray-800 */
+}
+
+/* Keep active link gold in all states */
+#navbar .nav-link[aria-current="page"] {
+  color: #d4af37;
+}
+
+/* Preserve hover to gold across states for better affordance */
+#navbar .nav-link:hover {
+  color: #d4af37;
+}
